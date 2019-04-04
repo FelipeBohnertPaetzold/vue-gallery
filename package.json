@@ -1,13 +1,13 @@
 {
-  "name": "vue-lightbox",
+  "name": "vue-slim-lightbox",
   "version": "0.1.0",
-  "main": "dist/vue-lightbox.umd.min.js",
+  "main": "dist/vue-slim-lightbox.umd.min.js",
   "typings": "types/index.d.ts",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "dist:demo": "vue-cli-service build --dest docs",
-    "dist": "vue-cli-service build --target lib --name vue-ightbox src/lib.js",
+    "dist": "vue-cli-service build --target lib --name vue-slim-lightbox src/lib.js",
     "test:unit": "vue-cli-service test:unit",
     "deploy": "yarn publish"
   },
@@ -16,7 +16,7 @@
     "types/"
   ],
   "repository": {
-    "url": "https://github.com/FelipeBohnertPaetzold/vue-lightbox"
+    "url": "https://github.com/FelipeBohnertPaetzold/vue-slim-lightbox"
   },
   "author": {
     "name": "Felipe Bohnert Paetzold",

@@ -1,4 +1,4 @@
-# vue-lightbox
+# vue-slim-lightbox
 
 ## Project setup
 ```
