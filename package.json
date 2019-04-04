@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "dist:demo": "vue-cli-service build --dest docs",
+    "dist": "vue-cli-service build --target lib --name vMap src/lib.js",
+    "test:unit": "vue-cli-service test:unit",
+    "deploy": "yarn publish"
   },
   "dependencies": {
     "core-js": "^2.6.5",
