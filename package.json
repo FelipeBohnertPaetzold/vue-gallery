@@ -1,13 +1,26 @@
 {
   "name": "vue-lightbox",
   "version": "0.1.0",
+  "main": "dist/vue-lightbox.umd.min.js",
+  "typings": "types/index.d.ts",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "dist:demo": "vue-cli-service build --dest docs",
-    "dist": "vue-cli-service build --target lib --name vMap src/lib.js",
+    "dist": "vue-cli-service build --target lib --name vue-ightbox src/lib.js",
     "test:unit": "vue-cli-service test:unit",
     "deploy": "yarn publish"
+  },
+  "files": [
+    "dist/",
+    "types/"
+  ],
+  "repository": {
+    "url": "https://github.com/FelipeBohnertPaetzold/vue-lightbox"
+  },
+  "author": {
+    "name": "Felipe Bohnert Paetzold",
+    "email": "felipe.paetzold@gmail.com"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -25,6 +38,8 @@
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "lint-staged": "^8.1.4",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.5.21"
@@ -37,5 +52,11 @@
       "vue-cli-service lint",
       "git add"
     ]
-  }
+  },
+  "keywords": [
+    "vue",
+    "vue-lightbox",
+    "lightbox",
+    "gallery"
+  ]
 }

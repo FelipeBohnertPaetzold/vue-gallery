@@ -1,0 +1,31 @@
+@import "./_variables.styl"
+
+$margin = 10px
+
+.image-preview
+  width $size
+  max-width $max-size
+  display flex
+  justify-content flex-start
+  overflow-x auto
+  margin-top $margin
+
+  .image-thumb
+    min-width 100px
+    min-height 100px
+    border-radius 5px
+    background-repeat no-repeat
+    background-size cover
+    margin-right $margin
+    overflow hidden
+    border 2px solid transparent
+
+    &:hover
+      cursor pointer
+      border 2px solid rgba(255, 255, 255, .8)
+
+    &.selected
+      border 2px solid #fff
+
+    &:last-child
+      margin-right 0

@@ -1,0 +1,94 @@
+@import "./_variables.styl"
+
+.gallery
+  position absolute
+  bottom 0
+  top 0
+  left 0
+  right 0
+  z-index 9
+  display flex
+  flex-direction column
+  justify-content center
+
+  .gallery-container
+    max-width 1024px
+    margin 0 auto
+
+  .gallery-visualization
+    align-items center
+
+  .flex-center
+    display flex
+    align-items center
+    justify-content center
+
+  .gallery-box
+    display flex
+    justify-content space-around
+    align-items center
+
+    .image-view
+      .image
+        position relative
+
+        .image-info
+          position absolute
+          bottom 0
+          background-color rgba(0, 0, 0, .6)
+          left 0
+          right 0
+          padding 20px
+
+          .image-info-title
+            font-size 20px
+            color rgba(255, 255, 255, .8)
+
+          .image-info-description
+            color rgba(255, 255, 255, .9)
+            font-size 16px
+            font-weight 100
+
+  .image
+    width $size
+    height $size
+    max-width $max-size
+    max-height $max-size
+    border-radius 5px
+    background-repeat no-repeat
+    background-size cover
+
+  .gallery-action
+    user-select none
+    color rgba(255, 255, 255, .6)
+    font-size $font_size
+    margin 50px
+    width 40px
+    height 40px
+    display flex
+    align-items center
+    justify-content center
+    opacity .3
+    padding 20px
+    cursor pointer
+    text-decoration none
+    border-radius 50%
+    box-shadow 0 0 1rem 1.4rem rgba(255, 255, 255, .13)
+    background-color rgba(255, 255, 255, .13)
+
+    &:hover
+      opacity 1
+
+    &:hover[disabled]
+      opacity .3
+      cursor not-allowed
+
+    &.font-lg
+      font-size $font_size_lg
+
+    &.action-close
+      position absolute
+      top 0
+      right 60px
+      .default-icon
+        font-size 40px
